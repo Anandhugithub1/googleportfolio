@@ -11,6 +11,12 @@
     height: fit-content;
   }
 }
+#projects{
+  margin-top: 50px;
+}
+
+
+
 
 @media screen and (max-width: 1200px) {
   #desktop-nav {
@@ -59,7 +65,12 @@
   article {
     font-size: 1rem;
   }
-  footer nav {
+  #contact{
+    margin-top: 20px;
+  }
+  footer{
+    margin-top: 40px;
+  }  footer nav {
     height: fit-content;
     margin-bottom: 2rem;
   }

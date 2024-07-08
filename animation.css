@@ -1,0 +1,162 @@
+img {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+p {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+
+.active {
+    opacity: 1;
+}
+
+@keyframes fall {
+    0% {
+      transform: translateY(-100vh);
+    }
+    100% {
+      transform: translateY(100vh);
+    }
+  }
+  .dynamic li span{
+    position: relative;
+    margin: 5px 0;
+    line-height: 90px;
+  }
+  .dynamic li {
+    list-style: none;
+    color: #FC6D6D;
+    font-size: 60px;
+    font-weight: 500;
+    position: relative;
+    top: 0;
+    animation: slide 12s steps(4) infinite;
+  
+  }
+  @keyframes slide{
+    100%{
+     top:-360px;
+    }
+  }
+  .dynamic li span::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #ffffff;
+    border-left: 2px solid #FC6D6D;
+    animation: typing 3s steps(10) infinite;
+  
+  
+  }
+  @keyframes typing {
+    40%, 60%{
+      left: calc(100% + 30px);
+    }
+    100%{
+      left: 0;
+    }
+  }
+  
+  .wrapper{
+    display: flex;
+  }
+  
+  .wrapper .dynamic{
+    overflow: hidden;
+    margin-left: 15px;
+  
+  }
+  
+  
+  .animated-text{
+    font-size: 34px;
+    font-weight: 600;
+    min-width: 280px;
+  }
+  
+  .animated-text span{
+    position: relative;
+  }
+  
+  .animated-text span::before{
+    content: "";
+    color: #ff7f50;
+    animation: words 20s infinite;
+  }
+  
+  .animated-text span::after{
+    content: "";
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    border-left: 2px solid #ff7f50;
+    right: -8px;
+    animation: cursor .8s infinite, typing 20s steps(14) infinite;
+  }
+  
+  @keyframes cursor {
+    to{
+        border-left: 2px solid #ff7f5000;
+    }
+  }
+  
+  @keyframes words {
+    0%,33%{
+        content: "Web Developer";
+    }
+    21%,40%{
+        content: "Freelancer";
+    }
+    41%,60%{
+        content: "App Developer";
+    }
+   
+  }
+  
+  @keyframes typing {
+    10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+        width: 0;
+    }
+    5%,20%,25%,40%,45%,60%,65%,80%,85%{
+        width: calc(100% + 8px);
+    }
+  }
+  
+  @keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    animation: slideIn 1s ease-out; /* Adjust the duration and timing function as needed */
+  }
+
+  .animation{
+    height: 200px;
+  }
+  
+  .progress-container {
+    text-align: center;
+  }
+  
+  .progress-bar {
+    width: 0;
+    height: 20px;
+    background-color: #3498db;
+    margin: 20px 0;
+    transition: width 0.3s ease;
+  }

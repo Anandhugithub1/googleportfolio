@@ -5,20 +5,40 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio</title>
+  <meta name="google-site-verification" content="JjuuQKmsO3Xu77FHsqdh5Jsd0j8P7Y2EnRByvJBRGG0" />
+  <title>Anandhu Webdeveloper </title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="animation.css" />
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="stylesheet" href="mediaqueries.css" />
   <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Freelancer Anandhu - Offering high-quality freelance services.">
+  <meta name='anandhu a' content='anandhu webdeveloper'>
+  <!-- Meta tags for individual information -->
+  <meta name="author" content="anandhuwebdevloper">
+  <meta name="keywords" content="Anandhu, freelancer, freelance services">
+  <meta name="keywords" content="anandhuashokan-webdeveloper, freelancer, freelance services">
+  <meta name="keywords" content="anandhuashokan-webdeveloper, webdeveloper, freelance services">
+<meta name="robots" conttent="index,follow">
+
+  <meta name="subject" content="Freelancing">
+
+  <!-- Open Graph meta tags for social media sharing (optional) -->
+  <meta property="og:title" content="Freelancer Anandhu">
+  <meta property="og:description" content="Offering high-quality freelance services.">
+  <meta property="og:image" content="URL_TO_ANANDHU_IMAGE">
+  <meta property="og:url" content="URL_TO_ANANDHU_PROFILE">
+  <meta property="og:type" content="website">
+  <meta name="google-adsense-account" content="ca-pub-1305611076434136">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1305611076434136" crossorigin="anonymous"></script>
+
 
 </head>
 
 <body>
-  <div class="snowflakes" aria-hidden="true">
-    <div class="snowfall" id="snowfall"></div>
 
-    <!-- Add more snowflake elements as needed -->
-  </div>
   <nav id="desktop-nav">
     <div class="logo">Anandhu</div>
     <div>
@@ -39,10 +59,13 @@
         <span></span>
       </div>
       <div class="menu-links">
-        <li><a href="#about" onclick="toggleMenu()">About</a></li>
-        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-        <!-- <li><a href="#contact" onclick="toggleMenu()">Contact</a></li> -->
+        <ul>
+          <li><a href="#pj" onclick="toggleMenu()">Projects</a></li>
+
+
+
+
+        </ul>
       </div>
     </div>
   </nav>
@@ -60,9 +83,6 @@
       </div>
 
       <div class="btn-container">
-        <button class="btn btn-color-2" onclick="window.open('https://drive.google.com/file/d/16_2eubwr7T09dAM5cWksuh2eAEXiVKl5/view?usp=drivesdk')">
-          Download CV
-        </button>
         <button class="btn btn-color-1" onclick="location.href='./#contact'">
           Contact Info
         </button>
@@ -75,20 +95,20 @@
       </div>
     </div>
   </section>
-  <section id="about">
+  <section id="about" loading="lazy">
     <p class="section__text__p1">Get To Know More</p>
     <h1 class="title">About Me</h1>
     <div class="section-container">
       <div class="section__pic-container">
-        <img src="./assets/197246325-programmer-programmer-developer-vector-illustration-in-flat-style.jpg" alt="Profile picture" class="animate__animated animate__lightSpeedInLeft"
-          id="about-pic" />
+        <img src="./assets/profiles.jpg" alt="Profile picture" class="animate__animated animate__lightSpeedInLeft"
+          id="about-pic"  loading="lazy"/>
       </div>
       <div class="about-details-container">
         <div class="about-containers">
           <div class="details-container">
             <img src="./assets/experience.png" alt="Experience icon" class="icon" />
             <h3>Expertise</h3>
-            <p>Freelance<br />Website Development</p>
+            <p>Website<br />and App Development</p>
           </div>
           <div class="details-container">
             <img src="./assets/education.png" alt="Education icon" class="icon" />
@@ -110,7 +130,7 @@
     </div>
     <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
   </section>
-  <section id="experience">
+  <section id="experience" loading="lazy">
     <div id="animations" style="height: 100px"></div>
 
     <p class="section__text__p1">Explore My</p>
@@ -142,7 +162,7 @@
               <div>
                 <h3>
                   <img
-                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAppJREFUSEvVlluITlEUx38fo1Aawii3SESK0pQi5MUThRf3B6UkSYgUiYTkmlt5kULxwJAn40EuJS9EIZfcMh4ISYMQ9l/r6Dj2PnvPN1OT/fJ9nbXW/7/2Omv916nQTqfSTrz8l8R1Vq3X1VStpTfuDMwA5gNTjLAROAacBb6kJpFC3AGYDCwAZgLdAuAfgdPAceAS8KMsiTLi0cBcu11fD8gzezbIY2sCTgBHgfu+BHzE9Va64ZGyrTD7nojfHWAhcDPv5yPWu7sQAVNZ+wA1gG4XKn8GI8yLMeIRwL0I8U5gtfno/6qIv6r3IEbcBfhUAqSmGWg3lVs/4AWgJgydrsDnGLHs74AeAZSTLvs5wFiz3wD0bFbA/y3Qq2gLdfVtYFQASN2uhjls9sXmqxjfuQWMSSU+D0z1oFwFJgK1wBuz9wY+ANdcA433xJwDpqcSHwKWeEAEICCN0m6zr3SJaKSkaGc8MQeAZanEa4FtBeenbr6HAD9zZc5cVG4112NgcCFuDbAjlXieSV/efymgSpQd3WxfwWE2cCqVeAJwJeesLu9vIyHwngUgde5+QKP4Cuies48DrqcSS39V2uxsBdY5/R3q9Pth4MrDgEeOfLvTAZU3OwOAl6nEksKv8PtD4buJhPbuXmB5gFjNJgWToGiBCEP90NF+/wor207SYG0ljdAGS6LBRsnH/d7WpmxbAJX4udtQvu1V+umjjbKrRMEifYYS0ahpNf5zYh8CEoqNTizU0Z1iTGb/5iRSs7vJhMUbFiPOgtRUuv20CLnERbd8EksylTjDmQQcBEYWgO9aVS7HCDN7S4kVJ4Va5Lp1s3Xrercmj8S+sVLHKSVxvX+NWnOKc1sSV8P3J6aaUreKsDXvuE2IfwHMxW4fl8QcTgAAAABJRU5ErkJggg==" />Angular
+                    src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-1024.png" height='30px' />React.js
                 </h3>
                 <p>Intermediate</p>
               </div>
@@ -151,16 +171,25 @@
               <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
               <div>
                 <h3 class="bx bxl-javascript skills__icon'">JavaScript</h3>
-                <p>Basic</p>
+                <p>Experienced</p>
               </div>
             </article>
             <article>
               <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
               <div>
                 <h3 class="bx bxl-typescript skills__icon'"><img
-                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAaVJREFUSEvt1z9rVEEUBfBfVFBBiY2YCKYwYARBLNIqsUslCAaLIGmSKggWVn4CESz8Atb+iYG0gRAVOxXsLCQgigpCCokgkgR9V+bB+Nhddtd9JsUOvGJm7pzDPXPmzrwBO9QGdojXriM+gdEeqbGGj1WsRhkv4nKPSEuYBUzlmFXiYXzuMWnA/cJRrJfYVeIJrNZAHJAX8bRPXCrQl7qXPuub6y81G5nrJ2630Pw45rCJW3iVxZ7FvdTvWOpvONKCeBwvcAnLlbhD2OiWeDsBx/o3uIG9WEmAh/Eh1fcYj8p3Ps09xNVuifMknhVlL7ZjX5K2nHuCK9iD1zjXQKGOpW6H+DtOF3v9qfDDAcwUF8J1nMkW10Ic+O+KbxovE1lcQHdws06pc1VC6tnkhxh/m9SoJeMfOJixf0Ecs2iP0/7XQhzmeoBriWwJ95PZIuNT/3ofN3N1HK1JbGVZ78ddzLezx0MImZq1KCZxlsM4FypBse453mMsZTiYxRzD17L/vx57j7JC8oe72bt6BCdbZN7JVNvP205Au47ddX8SXWfS7sLfsCZpH6gOb98AAAAASUVORK5CYII=" />TypeScript
+                    src="./assets/flutter.png" height ='20px'/>Flutter
                 </h3>
-                <p>Basic</p>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3 class="bx bxl-typescript skills__icon'"><img
+                    src="./assets/dart.png" height ='20px'/>Dart
+                </h3>
+                <p>Experienced</p>
               </div>
             </article>
           </div>
@@ -193,8 +222,24 @@
             <article>
               <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
               <div>
-                <h3 class="bx bxl-sql skills__icon"> <img src="" alt="">Sql</h3>
+                <h3 class="bx bxl-sql skills__icon"> <img src="" alt="">Node.js</h3>
+                <img src='assets/nodejs.png'/>
                 <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+
+                <h3 class="bx bxl-sql skills__icon"> <img src="assets/firebase.png" alt="">Firebase</h3>
+                <p>Experinced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3 class="bx bxl-sql skills__icon"> <img src="assets/mongodb.png" alt="">MongoDb</h3>
+                <p>Basic</p>
               </div>
             </article>
 
@@ -205,8 +250,8 @@
     <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
   </section>
 
-  <section id="projects">
-    <p class="section__text__p1" style="height: fit-content;">Browse My Recent</p>
+  <section id="projects" loading ="lazy">
+    <p class="section__text__p1" style="height: fit-content;" id="pj">Browse My Recent</p>
     <h1 class="title">Projects</h1>
     <div class="experience-details-container">
 
@@ -215,44 +260,39 @@
 
           <div class="article-container">
 
-            <img src="./assets/Screenshot (1).png" alt="Project 1" class="project-img" />
+            <img src="./assets/elevate.png" alt="Project 1" class="project-img-1" height ='200px' width ='200px' />
           </div>
-          <h2 class="experience-sub-title project-title">Landscaping Business Website</h2>
+          <h2 class="experience-sub-title project-title">Elevate Thailand Shipping Page</h2>
           <div class="btn-container">
-            <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
-              Github
+          
+
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://elevate.co.th/shipping/'">
+              Link
             </button>
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
-              Live Demo
-            </button> -->
           </div>
         </div>
         <div class="details-container color-container">
           <div class="article-container">
-            <img src="./assets/Screenshot (2).png" alt="Project 2" class="project-img" />
+            <img src="./assets/stonity.png" alt="Project 2" class="project-img-1 pr-img-2"  height ="200px" width ="300px"/>
           </div>
-          <h2 class="experience-sub-title project-title">Restaurant Portfolio</h2>
+          <h2 class="experience-sub-title project-title"> LandScaping Business Website </h2>
           <div class="btn-container">
-            <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
-              Github
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://stonityvarietystones.online/' " >
+              Link
             </button>
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
-              Live Demo
-            </button> -->
+
           </div>
         </div>
         <div class="details-container color-container">
           <div class="article-container">
             <img src="./assets/photo_2023-12-16_20-23-15.jpg" alt="Project 3" class="project-img" />
           </div>
-          <h2 class="experience-sub-title project-title">Patient Management</h2>
+          <h2 class="experience-sub-title project-title">Blood Donors App</h2>
           <div class="btn-container">
-            <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
-              Github
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://drive.google.com/file/d/1ZtM_6v882_CxyWl9hZzlJ0PvzUg8o76v/view'">
+              Link
             </button>
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
-              Live Demo
-            </button> -->
+           
           </div>
         </div>
       </div>
@@ -299,7 +339,8 @@
   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
   <script src="aniamtion.js"></script>
-  <script src="script.js"></script>
+  <script src="script.js" async></script>
+
   <!-- Include Lottie Library from CDN -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.8/lottie.min.js"></script>
 </body>

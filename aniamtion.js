@@ -10,17 +10,7 @@ const front="https://lottie.host/213abaa0-4483-46d0-b03e-f8a66ec8f244/EWl3tg89J5
       path: front,
     });
 
-      $(document).ready(function() {
-        $(window).scroll(function() {
-          // Check if the element is in the viewport
-          var elementTop = $('.animate-on-scroll').offset().top;
-          var windowHeight = $(window).height();
-          if (elementTop - windowHeight + 100 < $(window).scrollTop()) {
-            // Add the animation class when the element is in the viewport
-            $('.animate-on-scroll').addClass('animate__lightSpeedInLeft').css('opacity', '1');
-          }
-        });
-      });
+    
 
 
       const img="https://lottie.host/6045d723-3fae-4689-a2aa-06b3cda5e83f/CYx4KoiOLr.json"
@@ -34,3 +24,40 @@ const front="https://lottie.host/213abaa0-4483-46d0-b03e-f8a66ec8f244/EWl3tg89J5
       autoplay: true, // Set to false if you want to control the playback manually
       path: img,
     });
+
+
+    // / Function to check if an element is in the viewport
+function isInViewport(element) {
+  var rect = element.getBoundingClientRect();
+  return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
+}
+
+// Function to handle scroll event
+function handleScroll() {
+  var fadeInSection = document.querySelectorAll('img');
+  fadeInSection.forEach(function(section) {
+      if (isInViewport(section)) {
+          section.classList.add('active');
+      }
+  });
+}
+
+// Add scroll event listener to trigger fade-in effect
+window.addEventListener('scroll', handleScroll);
+
+
+function handlePara() {
+  var fadeInSection = document.querySelectorAll('p');
+  fadeInSection.forEach(function(section) {
+      if (isInViewport(section)) {
+          section.classList.add('active');
+      }
+  });
+}
+    
+window.addEventListener('scroll', handlePara);

@@ -33,9 +33,7 @@ function toggleMenu() {
     path: animation_path,
   });
 
-  document.addEventListener("DOMContentLoaded", function() {
-    createSnowflakes();
-  });
+
   
   // function createSnowflakes() {
   //   const snowflakesContainer = document.querySelector(".snowflakes");
@@ -87,8 +85,19 @@ function toggleMenu() {
     });
 
    
-  
-    
+    // Function to check if an element is in the viewport
+  function isInViewport(element) {
+    var rect = element.getBoundingClientRect();
+    return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+  }
+
+ 
+
     
      
 
